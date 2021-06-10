@@ -5,7 +5,7 @@ const Potion = require('../lib/Potion');
 //mocks or replaces the constructor's implementation with our faked data
 jest.mock('../lib/Potion');
 
-console.log(new Potion());
+//console.log(new Potion());
 
 const Player = require('../lib/Player');
 
