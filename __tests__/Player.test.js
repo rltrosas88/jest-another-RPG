@@ -1,13 +1,12 @@
 //when requiring modules it is not necessary to include the .js file extension because
     //Node will assume that the file is a JS file if no extension is specified
+const Player = require('../lib/Player');
 //imports the Potion() constructor into the test, establishing Potion as a usable variable.
 const Potion = require('../lib/Potion');
-//mocks or replaces the constructor's implementation with our faked data
-jest.mock('../lib/Potion');
-
 //console.log(new Potion());
 
-const Player = require('../lib/Player');
+//mocks or replaces the constructor's implementation with our faked data
+jest.mock('../lib/Potion');
 
 test('creates a player object', () => {
     const player = new Player('Dave');
